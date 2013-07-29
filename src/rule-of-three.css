@@ -1,0 +1,46 @@
+/* Rule of Three stylesheet by James Podles */
+
+
+html, body {
+	min-height: 100%;
+	width:100%;
+	padding:0;
+	margin:0;
+}
+
+div.full {
+	width:100%;
+}
+
+div.one, div.two, div.three {
+	width:33.33%;
+	display:inline-block;
+	float:left;
+	margin:0;
+}
+
+div.clear {
+	clear:both;
+}
+
+@media screen and (max-width: 900px) {
+	div.three, div.two {
+		clear:left;
+		width:100%;
+	}
+	div.one {
+		width:100%;
+	}
+	div.nest > div {
+		width:33.33%;
+		clear:none;
+	}
+	
+}
+
+@media screen and (max-width: 350px) {
+	div.nest > div {
+		width:100%;
+		clear:none;
+	}
+}
