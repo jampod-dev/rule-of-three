@@ -11,3 +11,5 @@ In comedy, writing, and web design, three is the magic number. This tiny CSS fra
 * __.nest__: Add this class to a div if you want to nest another grid inside it. 
 * __.clear__: If you're adding multiple rows, give this class to the first div in each row.
 * __.full__: Tells the div to stretch across the whole screen.
+
+Demo page: http://quadrophone.github.io/rule-of-three
