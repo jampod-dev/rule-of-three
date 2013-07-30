@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="description" content="A tiny, responsive CSS stylesheet that lets you quickly make three-column grids and layouts."/>
    <meta name="keywords" content="full-width framework, mobile css framework, three column css">
-
+	<link rel="stylesheet" href="src/rule-of-three.css" type="text/css">
     
    <style>
     p {
@@ -31,52 +31,7 @@
     div {
       border-bottom: 1px solid white;
     }
-    /* Rule of Three stylesheet by James Podles */
-
-
-html, body {
-  min-height: 100%;
-	width:100%;
-	padding:0;
-	margin:0;
-}
-
-div.full {
-	width:100%;
-}
-
-div.one, div.two, div.three {
-	width:33.33%;
-	display:inline-block;
-	float:left;
-	margin:0;
-}
-
-div.clear {
-	clear:both;
-}
-
-@media screen and (max-width: 900px) {
-	div.three, div.two {
-		clear:left;
-		width:100%;
-	}
-	div.one {
-		width:100%;
-	}
-	div.nest > div {
-		width:33.33%;
-		clear:none;
-	}
-	
-}
-
-@media screen and (max-width: 350px) {
-	div.nest > div {
-		width:100%;
-		clear:none;
-	}
-}
+    
    </style>
   <body>
 
