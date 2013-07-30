@@ -7,21 +7,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="description" content="A tiny, responsive CSS stylesheet that lets you quickly make three-column grids and layouts."/>
    <meta name="keywords" content="full-width framework, mobile css framework, three column css">
+   <script src="//use.edgefonts.net/open-sans.js"></script> 
 	<link rel="stylesheet" href="src/rule-of-three.css" type="text/css">
     
    <style>
+    body {
+      font-family: open-sans, sans-serif;
+    }
     p {
       font-size:2em;
-      font-family: Verdana, sans-serif;
-      color:white;
+            color:white;
     }
+    h1 {
+      font-size:3em;
+    }
+    h2 {
+      color:black;
+      font-size:2em;
+      width:70%;
+      margin:auto;
+      display:block;
+      font-weight: 400;
+    }
+
+
 
     div {
       text-align: center;
+      padding:0em;
+      height:12em;
+    }
+
+    div.nest > div {
+      height:7em;
+      top:2em;
+      position:relative;
+     
+    }
+
+    div.nest > p {
+      margin-top:0;
+      margin-bottom:0;
     }
 
     div.one {
       background-color:#09D1C4;
+    }
+    div.nest > div.one {
+      background-color:#7f8c8d ;
     }
 
     div.two {background-color:#6B8BA9;}
@@ -31,20 +64,20 @@
     div {
       border-bottom: 1px solid white;
     }
+     div.intro {
+      height:15em;
+    }
     
    </style>
   <body>
 
-<div class="full" style="background-color:white;"><p style="color:black; font-size:3em;">Rule of Three</p></div>
+<div class="full intro" style="background-color:white;"><h1>Rule of Three</h1>
+<h2>Sometimes, you only need three. Use this lightweight CSS framework to quickly add responsive, full-width three-item grids and columns to your website.</h2></div>
 <div class="full"><p>.full</p></div>
-<div class="one nest" >
+<div class="one nest" ><p>.one .nest</p>
   
 
-  <div class="one"><p>
-.one</p></div>
-<div class="two"><p>.two</p></div>
-  <div class="three"><p>.three</p></div>
-</div>
+  <div class="one"><p>.one</p></div><div class="two"><p>.two</p></div><div class="three"><p>.three</p></div></div>
 
 
 
